@@ -2,8 +2,6 @@ const notificationOptions = (body: string | undefined) => {
     const options: NotificationOptions = {
         icon: '/logo192.png',
         body: body,
-        data: "/",
-        requireInteraction: true,
         vibrate: 300
     }
 
