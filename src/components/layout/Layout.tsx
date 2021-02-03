@@ -1,4 +1,5 @@
 import { requestFirebaseNotificationPermission, onMessageReceive, subscribeToTopic } from '../../utils/FirebaseMessaging';
+import { pushNotification } from '../common/PushNotification';
 
 export default function Layout() {
 
