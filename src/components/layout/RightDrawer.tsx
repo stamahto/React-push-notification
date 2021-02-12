@@ -6,9 +6,8 @@ export default function RightDrawer() {
         requestFirebaseNotificationPermission().then((firebaseToken) => {
             unsubscribeFromTopic(firebaseToken as string);
             unsubscribeFromTopic(firebaseToken as string, user.user.department);
-
-            user.logout();
         });
+        user.logout();
     }
     
 }
