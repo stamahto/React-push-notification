@@ -56,7 +56,7 @@ export const sendToTopic = (title: string, body: string, department?: string) =>
     cloudMessagingService.post("/topic", requestMessage, {
         success: () => { },
         error: () => { }
-    });
+    }, true);
 }
 
 export const subscribeToTopic = (firebaseToken: string, department?: string) => {
@@ -69,7 +69,7 @@ export const subscribeToTopic = (firebaseToken: string, department?: string) => 
     cloudMessagingService.post("/topic/subscribe", requestModel, {
         success: () => { },
         error: () => { }
-    });
+    }, true);
 }
 
 export const unsubscribeFromTopic = (firebaseToken: string, department?: string) => {
@@ -82,5 +82,5 @@ export const unsubscribeFromTopic = (firebaseToken: string, department?: string)
     cloudMessagingService.delete("/topic/unsubscribe", requestModel, {
         success: () => { },
         error: () => { }
-    });
+    }, true);
 }
