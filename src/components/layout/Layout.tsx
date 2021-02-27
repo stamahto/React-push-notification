@@ -11,7 +11,6 @@ export default function Layout() {
             });
         }
 
-        // eslint-disable-next-line
     }, [user.user.department]);
 
     onMessageReceive().then((message) => pushNotification(message.title, message.body));
